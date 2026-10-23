@@ -1,3 +1,15 @@
+endpoints:
+  openRouter:
+    apiKey: ${OPENROUTER_KEY}
+    models:
+      default:
+        - deepseek/deepseek-v4-flash
+        - openai/gpt-4o
+        - openai/gpt-4o-mini
+        - anthropic/claude-sonnet-4-20250514
+        - google/gemini-2.5-flash-exp-08-28
+      fetch: true
+
 mcpServers:
   sabo:
     type: streamable-http
