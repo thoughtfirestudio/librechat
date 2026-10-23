@@ -1,0 +1,11 @@
+mcpServers:
+  sabo:
+    type: streamable-http
+    url: https://sabo.thoughtfire.studio/mcp
+    headers:
+      Authorization: 'Bearer {{SABO_API_KEY}}'
+    customUserVars:
+      SABO_API_KEY:
+        title: Sabo API Key
+        description: "Your Sabo workspace API key (starts with sabo_live_)"
+    startup: false
