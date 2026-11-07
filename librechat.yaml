@@ -1,20 +1,4 @@
-version: "1.3.17"
-endpoints:
-  custom:
-    - name: "OpenRouter"
-      apiKey: "${OPENROUTER_KEY}"
-      baseURL: "https://openrouter.ai/api/v1"
-      models:
-        default:
-          - "deepseek/deepseek-v4-flash"
-          - "openai/gpt-4o"
-          - "openai/gpt-4o-mini"
-        fetch: true
-      titleConvo: true
-      titleModel: "deepseek/deepseek-v4-flash"
-      dropParams:
-        - "stop"
-      modelDisplayLabel: "OpenRouter"
+version: "1.3.18"
 mcpServers:
   sabo:
     type: streamable-http
@@ -23,7 +7,18 @@ mcpServers:
       Authorization: 'Bearer {{SABO_API_KEY}}'
     customUserVars:
       SABO_API_KEY:
-        title: "Sabo API Key"
+        title: Sabo API Key
         description: "Your Sabo workspace API key (starts with sabo_live_)"
     startup: false
-    serverInstructions: true
+  life:
+    type: streamable-http
+    url: https://mcp.life.thoughtfire.studio/mcp
+    headers:
+      Authorization: 'Bearer life_tTrV9klT_X5IzD23tSKKaZgEA8KOlmUL'
+    startup: false
+  travel:
+    type: streamable-http
+    url: https://mcp.travel.thoughtfire.studio/mcp
+    headers:
+      Authorization: 'Bearer travel_8dKXmPq3sR5vYwZ2bN7fHjL9tC4aE6gU'
+    startup: false
