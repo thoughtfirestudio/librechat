@@ -36,6 +36,9 @@ services:
       - ./uploads:/app/uploads
       - ./logs:/app/logs
       - ./skill:/app/skill
+      # Load MCP server config (mcpServers) from repo root at boot; the api
+      # image from registry.librechat.ai does not bake in a librechat.yaml
+      - ./librechat.yaml:/app/librechat.yaml:ro
       - librechat-data:/app/data
   admin-panel:
     container_name: admin-panel
