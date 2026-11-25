@@ -10,12 +10,6 @@ mcpServers:
         title: Sabo API Key
         description: "Your Sabo workspace API key (starts with sabo_live_)"
     startup: false
-  life:
-    type: streamable-http
-    url: https://mcp.life.thoughtfire.studio/mcp
-    headers:
-      Authorization: 'Bearer life_tTrV9klT_X5IzD23tSKKaZgEA8KOlmUL'
-    startup: false
   travel:
     type: streamable-http
     url: https://mcp.travel.thoughtfire.studio/mcp
