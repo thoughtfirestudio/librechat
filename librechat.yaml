@@ -22,3 +22,9 @@ mcpServers:
     headers:
       Authorization: 'Bearer travel_8dKXmPq3sR5vYwZ2bN7fHjL9tC4aE6gU'
     startup: false
+  family:
+    type: streamable-http
+    url: https://mcp.family.thoughtfire.studio/mcp
+    headers:
+      Authorization: 'Bearer family_ggb3e69SbL7CxaVXhq-3kg'
+    startup: false
