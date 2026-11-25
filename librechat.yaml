@@ -6,12 +6,15 @@ endpoints:
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default:
-          - "deepseek/deepseek-v4-flash"
-          - "openai/gpt-4o"
-          - "openai/gpt-4o-mini"
+          - "deepseek/deepseek-v4.1-flash"
+          - "anthropic/claude-opus-5.5"
+          - "anthropic/claude-sonnet-5.5"
+          - "openai/gpt-6.1-sol"
+          - "openai/gpt-6-luna"
+          - "google/gemini-3.8-flash"
         fetch: true
       titleConvo: true
-      titleModel: "deepseek/deepseek-v4-flash"
+      titleModel: "deepseek/deepseek-v4.1-flash"
       dropParams:
         - "stop"
       modelDisplayLabel: "OpenRouter"
